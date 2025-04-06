@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to right, #f9e79f, #f4d03f);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header h1 {
+    font-size: 40px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #555;
+    animation: vibrar 1s infinite alternate;
+}
+
+/* Animación para vibrar */
+@keyframes vibrar {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+
+/* Secciones */
+.intro, .terror {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar imágenes */
+.intro img, .terror img {
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover en imágenes */
+.intro img:hover, .terror img:hover {
+    transform: scale(1.1);
+}
+
+/* Lista de cosas que le gustan a Limón */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffcc00;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Sección de imágenes terroríficas */
+.image-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
